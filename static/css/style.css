@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap');
+
+body {
+    margin:0;
+    background-color:#b8e994;
+    font-family: 'Open Sans', sans-serif;
+}
+.poke_container {
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.poke_container_form {
+    width: 50%;
+    max-width:400px;
+    margin: auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color:#fff;
+    padding:20px;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.3);
+    z-index:10;
+}
+.poke_leafs {
+    width: 50%;
+    max-width:400px;
+    margin: auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding:20px;
+    z-index:0;
+}
+.poke_leaf {
+    position:absolute;
+    width:20px;
+    height:25px;
+    border-radius:0% 50% 0% 50%;
+}
+.poke_leaf1 {
+    top:0px;
+    left:-15px;
+    background-color:#badc58;
+}
+.poke_leaf2 {
+    top:10px;
+    left:-15px;
+    background-color:#6ab04c;
+    transform:rotate(-60deg);
+}
+.poke_leaf3 {
+    top:35px;
+    left:-15px;
+    background-color:#badc58;
+    transform:rotate(-90deg);
+}
+.poke_leaf4 {
+    top:100px;
+    right:-15px;
+    background-color:#badc58;
+}
+.poke_leaf5 {
+    top:110px;
+    right:-15px;
+    background-color:#6ab04c;
+    transform:rotate(-60deg);
+}
+.poke_leaf6 {
+    top:125px;
+    right:-15px;
+    background-color:#badc58;
+    transform:rotate(90deg);
+}
+p {
+    margin:15px 0 2px 0;
+    font-size:12px;
+}
+.poke_email {
+    margin-bottom:15px;
+}
+.poke_input {
+    width:calc(100% - 10px);
+    border:1px solid #b8e994;
+    padding:9px 4px;
+    font-size:14px;
+}
+.poke_name {
+    display:inline-block;
+}
+input[type="submit"] {
+    background-color:#78d9ad;
+    border: transparent;
+    color:white;
+    text-align:center;
+    margin-top:20px;
+    padding:13px 0px;
+    cursor: pointer;
+    transition:all .3s ease;
+    width: 100%;
+}
+input[type="submit"]:hover {
+    background-color:#5aaa84;
+    transition:all .3s ease;
+}
+
+@media (max-width: 540px) {
+    .poke_container_form {
+        width: 70%;
+    }
+    .poke_leafs {
+        width: 70%;
+    }
+    .poke_container {
+        top: 20%;
+    }
+}

@@ -4,10 +4,15 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pytest = "*"
 
 [packages]
 flask = "*"
 gunicorn = "*"
+requests = "*"
+flask-wtf = "*"
+wtforms = "==2.2.1"
+flask-mail = "*"
 
 [requires]
 python_version = "3.8"
