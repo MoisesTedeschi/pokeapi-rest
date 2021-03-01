@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+
+{% block conteudo %}
+    <form method="POST" action="{{ url_for('poke_dados') }}" class="poke_container_form">     
+        
+        {{ poke_form.csrf_token }}
+        
+        <p>Informe um ou mais emails para o destino:</p>
+        
+        {{ poke_form.email_principal(class="poke_email poke_input",
+        placeholder="Informe um e-mail",
+        required ) }}
+
+        {{ poke_form.email_2(class="poke_email poke_input",
+        placeholder="Informe um e-mail") }}
+
+        {{ poke_form.email_3(class="poke_email poke_input",
+        placeholder="Informe um e-mail") }}
+        
+        <p>Qual o tipo do Pokémon:</p>
+        {{ poke_form.tipo_pokemon(class="poke_email poke_input",
+        placeholder="Ex: Grass, Electric, Ground...",
+        required ) }}
+
+        <input type="submit" class="poke_button" value="SOLICITAR DADOS">
+    </form>
+{% endblock %}
